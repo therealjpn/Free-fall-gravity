@@ -1,0 +1,165 @@
+/* Resets the entire document margin and padding */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* MainDiv for the entire document*/
+.mainDiv{
+    background-color: rgb(79, 198, 238);
+    height: 768px;
+    Width: 100%;
+    margin: 0px;
+}
+/* MainDiv for the entire document*/
+.firstDiv{
+    /* border: 1px solid black; */
+    height: 590px;
+    width:  1024px;
+    margin:  auto;
+    position: relative;
+        top: 26px;
+        
+    display: flex;
+}
+/* Div enclosing the boy and the velocity graph */
+.firstDiv-i{   
+    /* border: 1px solid black; */
+    height: 590px;
+    width:700px;
+}
+
+.firstDiv-i-1{
+    /* border: 1px solid yellow; */
+    height: 288px;
+    background-color: #ffef9f;
+}
+.firstDiv-i-2{
+    /* border: 1px solid yellow; */
+    height: 288px;
+    width: 700px;
+    margin-top: 9px;
+    
+}
+/* Div that encloses the buttons and call to actions */
+.secondDiv-ii{
+    /* border: 1px solid black; */
+    height: 589px;
+    width: 300px;
+    margin-left: 24px;
+    background-color: #ffef9f;
+    display: flex;
+    justify-content: center;
+}
+
+/* Initial Velocity*/
+#initialVel{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 27px;
+    /* margin-left: 10px; */
+    text-align: center;
+}
+input[type=text]{
+    border-radius: 50px;
+    height: 30px;
+    border:0px;
+    background-color: #ffac6a;
+    outline:none;
+    padding-left:20px;
+    transition:.3s;
+}
+
+#AccelerationDTG{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 27px;
+    text-align: center;
+}
+/* Manipulating radio button */
+.option{
+    position: relative;
+}
+.option input{
+    display: none;
+}
+  
+  .wrapper{
+      margin-bottom: 20px;
+  }
+  
+  .option label{
+      font-size: 20px;
+      font-weight: bolder;
+      cursor: pointer;
+      margin-left: 15px;
+  }
+
+  .option label::after{
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #050505;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+
+  }
+
+  .option label::before{ 
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    transform: translateY(25%);
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border: 2px solid #050505;
+    border-radius: 50%;
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.8); */
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .option input:checked ~ label::before {
+    opacity: 1;
+  }
+  /*image on div2 */
+  #city{
+   width: 700px;
+   max-height: 288px;
+   position: absolute;
+   left: 0px;
+   top: 300px;
+}
+#canon{
+    height: 40px;
+    width:35px;
+    left: 350px;
+    position: absolute;
+    left: 350px;
+    bottom: 5px;
+}
+#playButton{
+    width: 250px;
+    height: 150px;
+    margin-top: 30px;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+ }
+
+#playButtonBack{
+    background: none;
+    border: none;
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+    outline: none;
+ }
+ .canvas2{
+     position: absolute;
+     top: 300px;
+ }

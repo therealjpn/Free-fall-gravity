@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Motion Under Gravity</title>
+</head>
+<body>
+    <!-- MainDiv covers the entire web page -->
+    <div class="mainDiv">
+        <!-- firstDiv Inner Page Div -->
+        <div class="firstDiv">
+        <!-- firstDiv-i: where the graph is up and picture of the boy is below -->
+        <div class="firstDiv-i">
+            <!-- the Div for the graph that contains canva -->
+           <div class="firstDiv-i-1">  
+               <canvas>
+               </canvas>
+            </div> <!-- Graph Div ends here-->
+            <div class="firstDiv-i-2">
+                <div id="canvas2">
+                    
+               <div> <img src="asset/background.png" alt="city" id="city" /> </div>
+                <img src="asset/canon.png" alt="city" id="canon" />
+                </div>
+               
+            </div>
+            <canvas class="canvas2">
+                        
+            </canvas>
+        </div><!-- firstDiv-i ends here. -->
+        <!-- secondDiv-ii: where the graph is up and picture of the boy is below -->
+        <div class="secondDiv-ii">
+            <div class="secondDiv-ii-1">
+            <h3 id ="initialVel">
+                Initial Velocity
+            </h3>
+            <form action=" ">
+                <input type="text" id="initialVel-box" name="fnitialVel-box" value=" "><br>
+                <h3 id="AccelerationDTG">
+                    Acceleration<br> due to gravity
+                </h3>
+                <!-- check box -->
+                <!-- <input type="radio" id="Default" >
+                <label for="Default">Default</label><br>
+                <input type="radio" id="Custom" name="adg">
+                <label for="Default">Custom</label><br> -->
+                <div class="wrapper">
+                <div class="option">
+                    <input type="radio" id="check1" name= "radio" class="moveCheck" />
+                    <label for="check1" onclick="checkCall()" >Default</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="check2" name= "radio" />
+                    <label for="check2" onclick="customCall()">Custom</label>
+                </div>
+                </div>
+
+                <input type="text" value=" " id="adg" onchange="onValueChanged(this.value)"><br><br>
+                <button type="button" id ="playButtonBack" onclick="launchCanon()"><img src="asset/playButton.png" alt="play" id="playButton"></button>
+              </form> 
+
+            </div> <!-- secondDiv-ii-1 ends here. -->
+        </div> <!-- secondDiv -ii ends here. -->
+        </div> <!-- firstDiv ends here -->
+    </div> <!-- MainDiv ends here -->
+    <script src="js/main.js"></script>
+</body>
+</html>
